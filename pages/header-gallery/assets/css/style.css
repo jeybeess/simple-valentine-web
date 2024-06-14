@@ -131,7 +131,7 @@ header.sun-design4 {
             border: 1px solid;
             border-radius: 4px;
             display: inline-block;
-            box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+            box-shadow: white 4px 0 0, burlywood 4px 4px 0 1px;
 
             &:active {
                 box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
