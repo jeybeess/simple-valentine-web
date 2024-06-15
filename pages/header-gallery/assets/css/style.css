@@ -157,4 +157,41 @@ header.sun-design5 {
             transform: rotateZ(360deg);
         }
     }
+
+    & > nav.button-classes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+         & > a {
+            font-family:'Courier New', Courier, monospace;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            touch-action: manipulation;
+            font-weight: 400;
+            line-height: 20px;
+            box-sizing: border-box;
+            background-color: black;
+            border: 1px solid;
+            border-radius: 4px;
+            display: inline-block;
+            box-shadow: white 4px 0 0, burlywood 4px 4px 0 1px;
+
+            &:active {
+                box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+                transform: translate(2px, 2px);
+            }
+         }
+    }
+
+i {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+
+}
+
 }
