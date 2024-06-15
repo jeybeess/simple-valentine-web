@@ -99,50 +99,132 @@ header.sun-design3 {
 
 header.sun-design4 {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
     background-color: burlywood;
 
-    & > img {
+    & > img.sun-design {
         height: 70px;
-
-        &:hover {
-            transition: all 1s;
-            transform: rotateZ(360deg);
-        }
     }
 
     & > nav.button-classes {
         display: flex;
-        justify-content: center;
-        gap: 1rem;
+        align-items: center;
+        gap: 0.5rem;
 
-         & > a {
-            font-family:'Courier New', Courier, monospace;
-            color: #fff;
-            padding: 0.5rem 1rem;
+        & > a {
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 0.5vw 1vw;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
             touch-action: manipulation;
-            font-weight: 400;
-            line-height: 20px;
-            box-sizing: border-box;
-            background-color: black;
-            border: 1px solid;
-            border-radius: 4px;
-            display: inline-block;
-            box-shadow: white 4px 0 0, burlywood 4px 4px 0 1px;
+            color: black;
 
             &:active {
-                box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+                box-shadow: #422800 2px 2px 0 0;
                 transform: translate(2px, 2px);
             }
-         }
+        }
+
+        & > i {
+            padding-left: 34rem;
+        }
+
     }
 }
 
 header.sun-design5 {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: burlywood;
+    padding: 0.5rem 2rem;
+
+    & > img {
+        height: 70px;
+    }
+
+    & > nav.button-classes {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+
+        & > a {
+            border: 1px solid aliceblue;
+            border-radius: 8px;
+            padding: 0.5vw 1vw;
+            text-align: center;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            will-change: transform;
+            width: 100%;
+            touch-action: manipulation;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, .25) 0 8px 15px;
+                transform: translateY(-2px);
+
+                &:active {
+                    box-shadow: none;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+header.sun-design6 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: burlywood;
+
+    & > img {
+        height: 70px;
+
+        &:hover {
+            transition: all 1s;
+            transform: rotateZ(360deg);
+        }
+    }
+
+    & > nav.button-classes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+         & > a {
+            font-family:'Courier New', Courier, monospace;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            touch-action: manipulation;
+            font-weight: 400;
+            line-height: 20px;
+            box-sizing: border-box;
+            background-color: black;
+            border: 1px solid;
+            border-radius: 4px;
+            display: inline-block;
+            box-shadow: white 4px 0 0, burlywood 4px 4px 0 1px;
+
+            &:active {
+                box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+                transform: translate(2px, 2px);
+            }
+         }
+    }
+}
+
+header.sun-design7 {
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -184,14 +266,26 @@ header.sun-design5 {
          }
     }
 
-i {
-    
-    display: flex;
-    justify-content: center;
-    padding-top: 0.7rem;
-    padding-left: 0.5rem;
-    cursor: pointer;
+    i {
+
+        display: flex;
+        justify-content: center;
+        padding-top: 0.7rem;
+        padding-left: 0.5rem;
+        cursor: pointer;
+
+    }
 
 }
 
+header.sun-design8 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: burlywood;
+    padding: 0.5rem 1rem;
+
+    & > img {
+        height: 70px;
+    }
 }
