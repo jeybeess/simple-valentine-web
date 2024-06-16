@@ -287,5 +287,45 @@ header.sun-design8 {
 
     & > img {
         height: 70px;
+
+        &:hover {
+            transition: all 1s;
+            transform: rotateZ(360deg);
+        }
+    }
+
+    & > nav.button-classes {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        & > a {
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 0.5vw 1vw;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            color: black;
+
+            &:active {
+                box-shadow: #422800 2px 2px 0 0;
+                transform: translate(2px, 2px);
+            }
+        }
+    }
+}
+
+header.sun-design9 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: burlywood;
+    padding: 0.5rem 1rem;
+
+    & > img {
+        height: 70px;
     }
 }
