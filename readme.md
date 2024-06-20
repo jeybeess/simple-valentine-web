@@ -38,7 +38,7 @@
           <a href="#key-components">Key Components</a>
         </li>
         <li>
-          <a href="#technology">Technology</a>
+          <a href="#technology">Technology</a> 
         </li>
       </ol>
     </li>
