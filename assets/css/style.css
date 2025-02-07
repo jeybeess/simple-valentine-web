@@ -12,7 +12,7 @@
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/image-bg.jpg);
+    background-image: url(../img/WALLPAPER.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -42,7 +42,7 @@
         & > a {
               align-items: center;
               appearance: none;
-              background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+              background-image: radial-gradient(100% 100% at 100% 0, #FF0000 0, #FFC0CB 100%);
               border: 0;
               border-radius: 6px;
               box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -70,16 +70,16 @@
               font-size: 18px;
             
             &:focus {
-              box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+              box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FFFFFF 0 -3px 0 inset;
             
             
             &:hover {
-              box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+              box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FFFFFF 0 -3px 0 inset;
               transform: translateY(-2px);
             
             
             &:active {
-              box-shadow: #3c4fe0 0 3px 7px inset;
+              box-shadow: #FFFFFF 0 3px 7px inset;
               transform: translateY(2px);
             
                     }

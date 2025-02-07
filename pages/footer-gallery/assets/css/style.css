@@ -1,499 +1,77 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-div.top-comment {
+.main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-
-    & > a {
-        background-color: transparent;
-        border: 2px solid black;
-        border-radius: 15px;
-        padding: .25rem .5rem;
-        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-        font-size: 16px;
-        touch-action: manipulation;
-        text-decoration: none;
-        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-        user-select: none;
-        -webkit-user-select: none;
-        will-change: transform;
-
-        &:hover {
-            color: aliceblue;
-            background-color: black;
-            box-shadow: rgba(0, 0, 0, .25) 0 8px 15px;
-            transform: translateY(-2px);
-        }
-
-        &:active {
-            box-shadow: none;
-            transform: translateY(0);
-        }
-    }
-}
-
-footer.design1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: cadetblue;
-
-    & > div.all-details {
-        display: flex;
-        flex-direction: column;
-
-        & > div.details {
-            display: flex;
-            flex-direction: row;
-            gap: 0.3rem;
-            padding-left: 0.5rem;
-        }
-
-        & > div.details2 {
-            display: flex;
-            flex-direction: row;
-            gap: 0.3rem;
-            padding-left: 0.5rem;
-        }
-    }
-
-    p.mid-comment {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 700;
-        font-size: larger;
-    }
-
-    div.details3 {
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        padding-right: 0.7rem;
-
-        & > a {
-            text-decoration: none;
-            color: black;
-            font-weight: 500;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-        }
-    }
-}
-
-footer.design2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    background-color: antiquewhite;
-
-    & > div.icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-
-        & > i {
-            font-size: 25px;
-            padding: 1.5rem 0;
-        }
-    }
-
-    & > div.search-bar {
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        justify-content: center;
-        gap: 0.5rem;
-
-        & > button {
-            cursor: pointer;
-        }
-    }
-
-    & > div.website-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding-top: 2rem;
-        padding-bottom: 0;
-        color: aliceblue;
-        background-color: black;
-        width: 150%;
-
-        & > h4.trademark {
-            padding-bottom: 2rem;
-        }
-    }
-}
-
-footer.design3 {
-    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: bisque;
-    padding: 3rem;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/sadloopy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    gap: 5rem;
 
-    & > div.icons {
-        display: flex;
-        gap: 1rem;
-
-        & > i {
-            font-size: 25px;
-        }
-    }
-}
-
-footer.design4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 2rem;
-    background-color: gray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    & > div.website-link {
-        font-weight: 600;
-        color: aliceblue;
+    & > div.text {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-weight: 1000;
     }
 
-    & > div.icons {
+    & > div.buttonss {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        justify-content: center;
 
-        & > i {
-            font-size: 20px;
-            color: aliceblue;
-        }
-    }
-}
-
-footer.design5 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-    background-color: beige;
-
-    & > div.icon1 {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        & > i {
-            font-size: 20px;
-        }
-
-        & > p {
-            font-size: small;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    }
-
-    & > div.logo{
-        & > img {
-        height: 190px;
-        }
-    }
-
-    & > div.icon2 {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        & > i {
-            font-size: 22px;
-        }
-
-        & > p {
-            font-size: small;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    }
-}
-
-footer.design6 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: cadetblue;
-
-    & > div.all-details {
-        display: flex;
-        flex-direction: column;
-
-        & > div.details {
-            display: flex;
-            flex-direction: row;
-            gap: 0.3rem;
-            padding-left: 0.5rem;
-
-            & > i {
-                transition: 1s;
-                &:hover {
-                    transform: rotateY(360deg);
+            & > a {
+                align-items: center;
+                appearance: none;
+                background-image: radial-gradient(100% 100% at 100% 0, #FF0000 0, #FFC0CB 100%);
+                border: 0;
+                border-radius: 6px;
+                box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: "JetBrains Mono",monospace;
+                height: 48px;
+                justify-content: center;
+                line-height: 1;
+                list-style: none;
+                overflow: hidden;
+                padding-left: 16px;
+                padding-right: 16px;
+                position: relative;
+                text-align: left;
+                text-decoration: none;
+                transition: box-shadow .15s,transform .15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;
+                will-change: box-shadow,transform;
+                font-size: 18px;
+              
+              &:focus {
+                box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FFFFFF 0 -3px 0 inset;
+              
+              
+              &:hover {
+                box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FFFFFF 0 -3px 0 inset;
+                transform: translateY(-2px);
+              
+              
+              &:active {
+                box-shadow: #FFFFFF 0 3px 7px inset;
+                transform: translateY(2px);
                 }
             }
         }
-
-        & > div.details2 {
-            display: flex;
-            flex-direction: row;
-            gap: 0.3rem;
-            padding-left: 0.5rem;
-
-            & > i {
-                transition: 1s;
-                &:hover {
-                    transform: rotateY(360deg);
-                }
             }
         }
-    }
-
-    p.mid-comment {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 700;
-        font-size: larger;
-    }
-
-    div.details3 {
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        padding-right: 0.7rem;
-
-        & > a {
-            text-decoration: none;
-            color: black;
-            font-weight: 500;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, whitesmoke 100%);
-            border: 0;
-            border-radius: 6px;
-            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-            padding: 0.3rem 0.6rem;
-
-            &:hover {
-                box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, whitesmoke 0 -3px 0 inset;
-                transform: translateY(-2px);
-            }
-
-            &:active {
-                box-shadow: whitesmoke 0 3px 7px inset;
-                transform: translateY(2px);
-            }
-        }
-    }
-}
-
-footer.design7 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    background-color: antiquewhite;
-
-    & > div.icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-
-        & > i {
-            font-size: 25px;
-            padding: 1.5rem 0;
-
-            &:hover {
-                color: azure;
-                cursor: pointer;
-                transition: all 0.3s;
-            }
-        }
-    }
-
-    & > div.search-bar {
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        justify-content: center;
-        gap: 0.5rem;
-
-        & > button {
-            cursor: pointer;
-
-            &:hover {
-                color: grey;
-                box-shadow: black;
-                transform: translateY(-2px);
-            }
-
-            &:active {
-                transform: translateY(2px);
-                box-shadow: gray;
-                color: floralwhite;
-            }
-        }
-    }
-
-    & > div.website-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding-top: 2rem;
-        padding-bottom: 0;
-        color: aliceblue;
-        background-color: black;
-        width: 150%;
-
-        & > h4.trademark {
-            padding-bottom: 2rem;
-        }
-    }
-}
-
-footer.design8 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: bisque;
-    padding: 3rem;
-
-    & > div.icons {
-        display: flex;
-        gap: 1rem;
-
-        & > i {
-            font-size: 25px;
-            transition: 3s;
-
-            &:hover {
-                transform: rotateZ(360deg);
-            }
-        }
-    }
-}
-
-footer.design9 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 2rem;
-    background-color: gray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    & > div.website-link {
-        font-weight: 600;
-        color: aliceblue;
-    }
-
-    & > div.icons {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-
-        & > i {
-            font-size: 20px;
-            color: aliceblue;
-
-            &:hover {
-                cursor: pointer;
-                box-shadow: 8x 15px 8px 0px rgba(0, 0, 0, .25);
-                -webkit-box-shadow: 8px 15px 8px 0px rgba(0, 0, 0, .25);
-                -moz-box-shadow: 8px 15px 8px 0px rgba(0, 0, 0, .75);
-                color: burlywood;
-            }
-        }
-    }
-
-    & > div.search {
-        & > button.search-btn { 
-            &:hover {
-                color: grey;
-                box-shadow: black;
-                transform: translateY(-2px);
-                cursor: pointer;
-            }
-        
-            &:active {
-                transform: translateY(2px);
-                box-shadow: gray;
-                color: floralwhite;
-                cursor: pointer;
-            }
-        }
-    }
-
-}
-
-footer.design10 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-    background-color: beige;
-
-    & > div.icon1 {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        & > i {
-            font-size: 20px;
-            transition: 3s;
-            &:hover {
-                transform: rotateY(720deg);
-            }
-        }
-
-        & > p {
-            font-size: small;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    }
-
-    & > div.logo{
-        & > img {
-        height: 190px;
-        transition: 3s;
-            &:hover {
-                transform: rotateY(720deg);
-            }
-        }
-    }
-
-    & > div.icon2 {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        & > i {
-            font-size: 22px;
-            transition: 3s;
-            &:hover {
-                transform: rotateY(720deg);
-            }
-        }
-
-        & > p {
-            font-size: small;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    }
-}
